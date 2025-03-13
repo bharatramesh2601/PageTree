@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { createStore } from "redux";
 import Timer from './timer';
 import TreeWidget from "./TreeWidget";
+import EnhancedTreeWidget from "./EnhancedTreeWidget";
 
 import { Provider } from "react-redux";
 
@@ -49,6 +50,7 @@ function App() {
         <Route path="/">
           <Timer />
           <TreeWidget />
+          <EnhancedTreeWidget />
         </Route>
       </Switch>
     </div>
